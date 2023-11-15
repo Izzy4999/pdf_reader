@@ -10,7 +10,7 @@ export default function Providers({ children }: PropsWithChildren) {
     trpc.createClient({
       links: [
         httpBatchLink({
-          url: "http://localhost:3000/api/trpc",
+          url: "https://fiit-reader.vercel.app/api/trpc",
         }),
       ],
     })
