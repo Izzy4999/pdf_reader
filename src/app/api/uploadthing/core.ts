@@ -6,7 +6,6 @@ import { OpenAIEmbeddings } from "langchain/embeddings/openai";
 import { PineconeStore } from "langchain/vectorstores/pinecone";
 import { SupabaseVectorStore } from "langchain/vectorstores/supabase";
 import { pinecone } from "@/lib/pinecone";
-import { client } from "@/lib/supabase";
 
 const f = createUploadthing();
 
