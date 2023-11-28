@@ -47,17 +47,6 @@ export const ourFileRouter = {
           openAIApiKey: process.env.OPENAI_API_KEY,
         });
 
-        const vectorStore = await SupabaseVectorStore.fromDocuments(
-          pageLevelDocs,
-          embeddings,
-          {
-            tableName: "documents",
-            client: client,
-            queryName: "match_documents",
-
-          }
-        );
-
         // console.log(vectorStore.)
 
         const store = await PineconeStore.fromDocuments(
